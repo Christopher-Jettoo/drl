@@ -1,0 +1,47 @@
+Unter Data Model - SQL 
+
+Drivers Table 
+- DriverID (Primary key)
+- Name
+- ContactInfo 
+- StartDate
+- AvgRating
+
+Driver's TimeSheet Table
+- TimeSheetID (Primary key)
+- DriverID (Foreign Key refernences Drivers Table)
+- ClockIn
+- ClockOut
+
+
+Passengers Table
+- PassengerID (Primary key)
+- Name
+- ContactInfo
+
+
+Rides Table
+- RideID (Primary Key)
+- DriverID (Foreign Key refernences Driver Table)
+- PassengerID (Foreign Key refernences Passenger Table)
+- RideStart
+- RideEnd
+- PickupGPS
+- DropoffGPS
+- Distance
+- TotalPassengers
+- BaseFare
+- Tip
+
+RideRatings Table
+- RatingID (Primary Key)
+- RideID (Foreign Key refernences Rides Table)
+- Ratings 
+- Comments 
+
+                PART 2              
+Driver Reviews Table
+- ReviewID (Primary key)
+- RideID (Foreign key refernences Rides Table)
+- Ratings
+- Comments
